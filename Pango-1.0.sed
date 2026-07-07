@@ -11,7 +11,7 @@ s/: \([A-Za-z.]*Accumulator[,)]\)/: @escaping \1/g
 s/: \([A-Za-z.]*SignalHandler[,)]\)/: @escaping \1/g
 s/: \([A-Za-z.]*Transformer[,)]\)/: @escaping \1/g
 s/: \([A-Za-z.]*Transform[,)]\)/: @escaping \1/g
-s/@escaping PangoTextTransform/PangoTextTransform/g
+s/@escaping \(Pango\)\{0,1\}TextTransform/\1TextTransform/g
 s/: \([A-Za-z.]*Transformer =\)/: @escaping \1/g
 s/: \([A-Za-z.]*Hook[,)]\)/: @escaping \1/g
 s/: \([A-Za-z.]*Function[,)]\)/: @escaping \1/g
